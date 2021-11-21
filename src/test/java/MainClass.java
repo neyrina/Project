@@ -34,7 +34,6 @@ public class MainClass extends BaseTest {
         logger.info("Отсортировали по ДОД");
         eventsPage.checkDod();
         logger.info("Карточки ДОД проверены");
-
     }
 
 

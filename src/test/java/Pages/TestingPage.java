@@ -12,12 +12,13 @@ import java.util.List;
 public class TestingPage extends BasePage {
 
     public TestingPage(WebDriver driver) {
+
         super(driver);
     }
 
     public void countCards() {
         int courseAmount = driver.findElements(By.xpath("//div[@class='lessons__new-item-container']")).size();
-        Assert.assertTrue("На странице не 11 курсов", courseAmount == 11);
+        Assert.assertEquals("На странице не 11 курсов", 11, courseAmount);
 
     }
 
@@ -26,36 +27,38 @@ public class TestingPage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, 5);
 
         for (int i = 1; i <=courses.size(); i++) {
-    /*Getting the list of items again so that when the page is
-     navigated back to, then the list of items will be refreshed
-     again */
             courses = driver.findElements(By.xpath("//div[@class=\"lessons\"]//a[@class=\"js-stats lessons__new-item lessons__new-item_hovered\"]"));
-
-            //Waiting for the element to be visible
             wait.until(ExpectedConditions.visibilityOf(courses.get(i-1)));
             String courseUrl = courses.get(i-1).getAttribute("href");
             driver.get(courseUrl);
-            if (courseUrl.equals("https://otus.ru/lessons/qa-auto-java-specialization/?int_source=courses_catalog&int_term=testing") ||
-                    courseUrl.equals("https://otus.ru/online/manualtesting/")) {
-                driver.navigate().back();
-            } else if (courseUrl.equals("https://otus.ru/lessons/java-qa-pro/?int_source=courses_catalog&int_term=testing") ||
-                    courseUrl.equals("https://otus.ru/lessons/avtomatizaciya-web-testirovaniya/?int_source=courses_catalog&int_term=testing")) {
-                Assert.assertFalse("Не указан заголовок курса", driver.findElement(By.xpath("//div[@class='course-header2__title']")).getText().isEmpty());
-                Assert.assertFalse("Не указано описание курса", driver.findElement(By.xpath("//div[@class='course-header2__admin-text']")).getText().isEmpty());
-                commonCheck();
-            } else if (courseUrl.equals("https://otus.ru/lessons/java-qa-basic/?int_source=courses_catalog&int_term=testing") || courseUrl.equals("https://otus.ru/lessons/qajs/?int_source=courses_catalog&int_term=testing")) {
-                Assert.assertFalse("Не указан заголовок курса", driver.findElement(By.xpath("//div[@class='course-header2__title']")).getText().isEmpty());
-                Assert.assertFalse("Не указано описание курса", driver.findElement(By.xpath("//h1[@class='course-header2__subtitle']")).getText().isEmpty());
-                commonCheck();
-            } else if (courseUrl.equals("https://otus.ru/lessons/kotlin-qa-engineer/?int_source=courses_catalog&int_term=testing")) {
-                Assert.assertFalse("Не указан заголовок курса", driver.findElement(By.xpath("//div[@class='course-header2__title']")).getText().isEmpty());
-                Assert.assertFalse("Не указано описание курса", driver.findElement(By.xpath("//div[@class='course-header2__admin-text']")).getText().isEmpty());
-                Assert.assertFalse("Не указана длительность курса", driver.findElement(By.xpath("//p[@class='course-header2-bottom__item-text']")).getText().isEmpty());
-                driver.navigate().back();
-            } else {
-                Assert.assertFalse("Не указан заголовок курса", driver.findElement(By.xpath("//h1[@class='course-header2__title']")).getText().isEmpty());
-                Assert.assertFalse("Не указано описание курса", driver.findElement(By.xpath("//div[@class='course-header2__admin-text']")).getText().isEmpty());
-                commonCheck();
+            switch (courseUrl) {
+                case "https://otus.ru/lessons/qa-auto-java-specialization/?int_source=courses_catalog&int_term=testing":
+                case "https://otus.ru/online/manualtesting/":
+                    driver.navigate().back();//Эти две страницы имеют вообще другой формат. Просто пропускаю
+                    break;
+                case "https://otus.ru/lessons/java-qa-pro/?int_source=courses_catalog&int_term=testing"://Т.к локаторы на страницах отличаются, пришлось наплодить кэйсов
+                case "https://otus.ru/lessons/avtomatizaciya-web-testirovaniya/?int_source=courses_catalog&int_term=testing":
+                    Assert.assertFalse("Не указан заголовок курса", driver.findElement(By.xpath("//div[@class='course-header2__title']")).getText().isEmpty());
+                    Assert.assertFalse("Не указано описание курса", driver.findElement(By.xpath("//div[@class='course-header2__admin-text']")).getText().isEmpty());
+                    commonCheck();
+                    break;
+                case "https://otus.ru/lessons/java-qa-basic/?int_source=courses_catalog&int_term=testing":
+                case "https://otus.ru/lessons/qajs/?int_source=courses_catalog&int_term=testing":
+                    Assert.assertFalse("Не указан заголовок курса", driver.findElement(By.xpath("//div[@class='course-header2__title']")).getText().isEmpty());
+                    Assert.assertFalse("Не указано описание курса", driver.findElement(By.xpath("//h1[@class='course-header2__subtitle']")).getText().isEmpty());
+                    commonCheck();
+                    break;
+                case "https://otus.ru/lessons/kotlin-qa-engineer/?int_source=courses_catalog&int_term=testing"://в этой карточке отсутствует характеристика Формат
+                    Assert.assertFalse("Не указан заголовок курса", driver.findElement(By.xpath("//div[@class='course-header2__title']")).getText().isEmpty());
+                    Assert.assertFalse("Не указано описание курса", driver.findElement(By.xpath("//div[@class='course-header2__admin-text']")).getText().isEmpty());
+                    Assert.assertFalse("Не указана длительность курса", driver.findElement(By.xpath("//p[@class='course-header2-bottom__item-text']")).getText().isEmpty());
+                    driver.navigate().back();
+                    break;
+                default:
+                    Assert.assertFalse("Не указан заголовок курса", driver.findElement(By.xpath("//h1[@class='course-header2__title']")).getText().isEmpty());
+                    Assert.assertFalse("Не указано описание курса", driver.findElement(By.xpath("//div[@class='course-header2__admin-text']")).getText().isEmpty());
+                    commonCheck();
+                    break;
             }
         }
     }
