@@ -52,7 +52,8 @@ public class TestingPage extends BasePage {
                     break;
                 case "https://otus.ru/lessons/qa-auto-java-specialization/?int_source=courses_catalog&int_term=testing":
                 case "https://otus.ru/online/manualtesting/":
-                    driver.navigate().back();//Эти две страницы имеют вообще другой формат. Просто пропускаю
+                case "https://otus.ru/lessons/qa-game/?int_source=courses_catalog&int_term=testing":
+                    driver.navigate().back();//Эти две страницы имеют вообще другой формат. А в qa-game убрали формат Просто пропускаю
                     break;
                 default:
                     Assert.assertFalse("Не указан заголовок курса " + courseUrl, driver.findElement(By.xpath("//h1[@class='course-header2__title']")).getText().isEmpty());

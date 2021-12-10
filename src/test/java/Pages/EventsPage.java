@@ -21,13 +21,13 @@ public class EventsPage extends BasePage {
 
     public void checkEventsPresenceAndDate() throws ParseException {
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
-        driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/node/#event-1717']")).sendKeys(Keys.CONTROL, Keys.END);
-        driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/ml-bigdata/#event-1744']")).sendKeys(Keys.CONTROL, Keys.END);
-        driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/avtomatizaciya-web-testirovaniya/#event-1754']")).sendKeys(Keys.CONTROL, Keys.END);
+        driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/linux-professional/#event-1793']")).sendKeys(Keys.CONTROL, Keys.END);
+        driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/algorithm/#event-1789']")).sendKeys(Keys.CONTROL, Keys.END);
+
 
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[contains(text(), '\n" +
-                "          Demo-урок \"Готовься к увольнению с первого дня работы\"\n" +
+                "          Внутреннее устройство каналов Go\n" +
                 "        ')]"))));
         List<WebElement> events = driver.findElements(By.xpath("//div[@class='dod_new-events__list js-dod_new_events']//a[@class='dod_new-event']"));
         SimpleDateFormat sdf = new SimpleDateFormat("dd MMMM");
@@ -48,8 +48,8 @@ public class EventsPage extends BasePage {
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[contains(text(), '\n" +
-                "          Demoday курса Team Lead\n" +
-                "        ')]"))));
+                "      Demo Day курса «Системный аналитик. Advanced»\n" +
+                "    ')]"))));
         List<WebElement> events = driver.findElements(By.xpath("//div[@class='dod_new-events__list js-dod_new_events']//a[@class='dod_new-event']"));
         for (int i = 1; i <= events.size(); i++) {
             String eventUrl = events.get(i - 1).getAttribute("href");
