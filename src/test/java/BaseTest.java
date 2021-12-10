@@ -14,7 +14,7 @@ public class BaseTest {
 
     @Before
     public void startUp() {
-        String inpWord = System.getProperty("browser").trim().toLowerCase();//"chrome";
+        String inpWord = "chrome";//System.getProperty("browser").trim().toLowerCase();//"chrome";
         Browsers word = Browsers.fetchValue(inpWord);
         driver = WebDriverFactory.create(word);
 
