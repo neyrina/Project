@@ -24,7 +24,6 @@ public class EventsPage extends BasePage {
         driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/linux-professional/#event-1793']")).sendKeys(Keys.CONTROL, Keys.END);
         driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/algorithm/#event-1789']")).sendKeys(Keys.CONTROL, Keys.END);
 
-
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[contains(text(), '\n" +
                 "          Внутреннее устройство каналов Go\n" +

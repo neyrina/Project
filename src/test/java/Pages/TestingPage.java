@@ -53,6 +53,7 @@ public class TestingPage extends BasePage {
                 case "https://otus.ru/lessons/qa-auto-java-specialization/?int_source=courses_catalog&int_term=testing":
                 case "https://otus.ru/online/manualtesting/":
                 case "https://otus.ru/lessons/qa-game/?int_source=courses_catalog&int_term=testing":
+                case "https://otus.ru/lessons/loadqa/?int_source=courses_catalog&int_term=testing":
                     driver.navigate().back();//Эти две страницы имеют вообще другой формат. А в qa-game убрали формат Просто пропускаю
                     break;
                 default:
