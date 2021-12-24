@@ -21,8 +21,8 @@ public class EventsPage extends BasePage {
 
     public void checkEventsPresenceAndDate() throws ParseException {
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
-        driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/linux-professional/#event-1793']")).sendKeys(Keys.CONTROL, Keys.END);
-        driver.findElement(By.xpath("//a[@href='https://otus.ru/lessons/algorithm/#event-1789']")).sendKeys(Keys.CONTROL, Keys.END);
+        driver.findElement(By.xpath("//div[@class='dod_new-events__list js-dod_new_events']/a[20]")).sendKeys(Keys.CONTROL, Keys.END);
+        driver.findElement(By.xpath("//div[@class='dod_new-events__list js-dod_new_events']/a[40]")).sendKeys(Keys.CONTROL, Keys.END);
 
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[contains(text(), '\n" +
@@ -46,9 +46,6 @@ public class EventsPage extends BasePage {
     public void checkDod() {
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[contains(text(), '\n" +
-                "      Demo Day курса «Системный аналитик. Advanced»\n" +
-                "    ')]"))));
         List<WebElement> events = driver.findElements(By.xpath("//div[@class='dod_new-events__list js-dod_new_events']//a[@class='dod_new-event']"));
         for (int i = 1; i <= events.size(); i++) {
             String eventUrl = events.get(i - 1).getAttribute("href");
