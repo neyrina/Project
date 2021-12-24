@@ -1,0 +1,116 @@
+2021-12-10 17:54:32,520 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 17:54:47,971 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 17:54:55,270 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-10 17:54:55,346 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-10 18:12:41,707 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 18:13:14,609 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 18:13:23,911 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-10 18:13:23,963 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-10 18:19:48,001 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 18:20:10,106 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 18:20:16,139 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-10 18:20:16,185 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-10 18:23:15,691 INFO MainClass [Test worker] Карточки курсов проверены
+2021-12-10 18:23:26,194 INFO MainClass [Test worker] Вернулись на главную Отуса
+2021-12-10 18:23:27,633 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-10 18:33:12,889 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 18:33:19,665 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 18:33:24,437 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-10 18:33:24,439 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-10 18:33:24,440 INFO MainClass [Test worker] Карточки курсов проверены
+2021-12-10 18:33:28,139 INFO MainClass [Test worker] Вернулись на главную Отуса
+2021-12-10 18:33:30,213 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-10 18:35:42,269 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 18:35:50,332 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 18:35:54,250 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-10 18:35:54,253 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-10 18:35:54,254 INFO MainClass [Test worker] Карточки курсов проверены
+2021-12-10 18:35:57,845 INFO MainClass [Test worker] Вернулись на главную Отуса
+2021-12-10 18:35:59,864 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-10 18:36:08,509 INFO MainClass [Test worker] Отсортировали по ДОД
+2021-12-10 18:38:21,166 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 18:38:32,254 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 18:38:35,505 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-10 18:38:35,507 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-10 18:38:35,508 INFO MainClass [Test worker] Карточки курсов проверены
+2021-12-10 18:38:40,251 INFO MainClass [Test worker] Вернулись на главную Отуса
+2021-12-10 18:38:41,686 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-10 18:38:49,469 INFO MainClass [Test worker] Отсортировали по ДОД
+2021-12-10 18:38:50,698 INFO MainClass [Test worker] Карточки ДОД проверены
+2021-12-10 20:19:16,477 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 20:19:40,330 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 20:19:49,965 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-10 20:19:50,045 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-10 20:19:58,626 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 20:21:13,020 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 20:21:26,267 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-10 20:24:19,885 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 20:24:53,979 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 20:24:57,768 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-10 20:25:04,636 INFO MainClass [Test worker] Даты проведения мероприятий больше или равны текущей дате
+2021-12-10 20:25:12,743 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 20:25:28,133 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 20:25:30,860 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-10 20:25:32,503 INFO MainClass [Test worker] Отсортировали по ДОД
+2021-12-10 20:25:33,410 INFO MainClass [Test worker] Карточки ДОД проверены
+2021-12-10 20:43:36,421 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 20:43:46,079 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 20:43:48,019 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-10 20:46:08,837 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 20:46:19,056 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 20:46:20,480 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-10 20:46:27,425 INFO MainClass [Test worker] Даты проведения мероприятий больше или равны текущей дате
+2021-12-10 20:46:40,535 INFO MainClass [Test worker] Драйвер поднят
+2021-12-10 20:47:05,353 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-10 20:47:06,849 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-14 18:47:02,280 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 18:48:47,317 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 18:48:49,389 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-14 18:48:49,458 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-14 18:49:38,127 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 18:49:50,416 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 18:49:54,669 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-14 18:55:22,479 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 18:55:39,574 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 18:55:49,970 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-14 19:08:10,510 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 19:08:22,448 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 19:08:26,568 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-14 19:08:33,588 INFO MainClass [Test worker] Даты проведения мероприятий больше или равны текущей дате
+2021-12-14 19:08:42,159 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 19:08:56,249 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 19:08:59,943 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-14 19:09:03,770 INFO MainClass [Test worker] Отсортировали по ДОД
+2021-12-14 19:09:04,556 INFO MainClass [Test worker] Карточки ДОД проверены
+2021-12-14 20:04:45,438 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 20:05:38,021 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 20:05:57,279 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-14 20:21:46,928 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 20:22:37,767 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 20:22:51,572 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-14 20:22:57,838 INFO MainClass [Test worker] Даты проведения мероприятий больше или равны текущей дате
+2021-12-14 20:23:39,259 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 20:24:10,953 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 20:24:15,061 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-14 20:24:16,242 INFO MainClass [Test worker] Отсортировали по ДОД
+2021-12-14 20:24:17,290 INFO MainClass [Test worker] Карточки ДОД проверены
+2021-12-14 20:24:29,025 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 20:24:45,525 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 20:24:51,135 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-14 20:24:51,393 INFO MainClass [Test worker] Проверка на 11 элементов прошла
+2021-12-14 20:25:02,059 INFO MainClass [Test worker] Драйвер поднят
+2021-12-14 20:25:11,814 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-14 20:25:17,439 INFO MainClass [Test worker] Открыт раздел Тестирование
+2021-12-14 20:34:22,737 INFO MainClass [Test worker] Карточки курсов проверены
+2021-12-24 20:34:02,275 INFO MainClass [Test worker] Драйвер поднят
+2021-12-24 20:34:11,167 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-24 20:34:13,371 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-24 20:43:23,200 INFO MainClass [Test worker] Драйвер поднят
+2021-12-24 20:43:31,751 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-24 20:43:34,187 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-24 20:43:39,211 INFO MainClass [Test worker] Даты проведения мероприятий больше или равны текущей дате
+2021-12-24 20:46:16,015 INFO MainClass [Test worker] Драйвер поднят
+2021-12-24 20:46:59,394 INFO MainClass [Test worker] Открыт сайт Отус
+2021-12-24 20:47:07,490 INFO MainClass [Test worker] Перешли в Календарь мероприятий
+2021-12-24 20:47:14,495 INFO MainClass [Test worker] Отсортировали по ДОД
+2021-12-24 20:47:15,216 INFO MainClass [Test worker] Карточки ДОД проверены
